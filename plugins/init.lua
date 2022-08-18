@@ -13,4 +13,17 @@ return {
       require("core.utils").load_mappings "fugitive"
     end,
   },
+  ["phaazon/hop.nvim"] = {
+    module = "hop",
+    setup = function()
+      require("hop").setup { keys = 'etovxqpdygfblzhckisuran' }
+      require("core.utils").load_mappings "hop"
+    end,
+  },
+  ["neovim/nvim-lspconfig"] = {
+      config = function()
+        require "plugins.configs.lspconfig"
+        require "custom.plugins.lspconfig"
+      end,
+  },
 }

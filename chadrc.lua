@@ -5,16 +5,27 @@ local pluginConfs = require "custom.plugins.configs"
 -- example of changing theme:
 M.plugins = {
   user = require "custom.plugins",
+  -- remove ={
+  --   "windwp/nvim-autopairs",
+  -- },
   override = {
     ["hrsh7th/nvim-cmp"] = pluginConfs.cmp,
     ["tzachar/cmp-tabnine"] = pluginConfs.tabnine,
     ["kyazdani42/nvim-tree.lua"] = pluginConfs.nvimtree,
     ["tpope/vim-fugitive"] = {},
-  }
+    ["phaazon/hop.nvim"] = {},
+    ["williamboman/mason.nvim"] = pluginConfs.mason,
+  },
+  options = {
+    lspconfig = {
+      setup_lspconf = "custom.configs.lspconfig",
+    },
+  },
 }
 
 M.ui = {
-  theme_toggle = { "onedark", "one_light" },
+  theme_toggle = { "nightowl", "everforest_light" },
+  theme = "nightowl",
 }
 
 M.mappings = require "custom.mappings"

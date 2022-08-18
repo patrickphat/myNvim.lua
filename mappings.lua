@@ -10,5 +10,12 @@ M.fugitive = {
   },
 }
 
+M.hop ={
+  n = {
+    ["<leader>f"] = {"<cmd> HopWord <CR>", "Hop word"},
+    ["<leader>fa"] = {"<cmd> HopAnywhere <CR>", "Hop anywhere"},
+  }
+}
+
 return M
 

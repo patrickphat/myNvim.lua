@@ -44,4 +44,30 @@ M.nvimtree = function()
   }
 end
 
+M.mason = function()
+  return   {
+    ensure_installed = {
+        -- lua stuff
+        "lua-language-server",
+        "stylua",
+
+        -- web dev
+        "css-lsp",
+        "html-lsp",
+        "typescript-language-server",
+        "vue-language-server",
+        "emmet-ls",
+        "json-lsp",
+
+        --python
+        "pyright",
+
+        -- shell
+        "shfmt",
+        "shellcheck",
+      },
+    }
+  end
+
+
 return M
