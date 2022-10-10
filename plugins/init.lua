@@ -35,7 +35,7 @@ return {
     run = ":TSUpdate",
     config = function()
       require "plugins.configs.treesitter"
-      require "custom.configs.treesitter"
+      require "custom.plugins.treesitter"
     end,
   },
 }
