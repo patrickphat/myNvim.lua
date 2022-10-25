@@ -65,6 +65,9 @@ M.mason = function()
         -- shell
         "shfmt",
         "shellcheck",
+
+        -- go
+        "golangci-lint-langserver",
       },
     }
   end
