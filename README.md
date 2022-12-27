@@ -1,8 +1,8 @@
 # myNvim.lua
-My nvim configs based on Lua (templating on NvChad)
+My nvim configs based on Lua (templating on AstroVim)
 
 ## Features
-- All good plugins from [NvChad](https://github.com/NvChad/NvChad)
+- All good plugins from [AstroVim](https://github.com/NvChad/NvChad)
 - vim-fugitive
 - TabNine Lsp
 - NvimTree with relative numbering by default
@@ -10,7 +10,7 @@ My nvim configs based on Lua (templating on NvChad)
 ## Installation
 
 ```bash
-# Clone the NvChad template 
+# Clone the AstroVim template 
 git clone git@github.com:AstroNvim/AstroNvim.git ~/.config/nvim --depth 1
 
 # Clone my custom template
