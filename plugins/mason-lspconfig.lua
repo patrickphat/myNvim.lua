@@ -13,6 +13,7 @@ return {
       "sqlls",
       "tsserver",
       "yamlls",
+      "prettier",
     },
   },
 }
