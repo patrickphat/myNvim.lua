@@ -25,6 +25,13 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+
+    ["S-h"] = {
+      function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
+      desc = "Previous buffer",
+    },
+    ["S-l"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer" },
   },
   t = {
     -- setting a mapping to false will disable it
