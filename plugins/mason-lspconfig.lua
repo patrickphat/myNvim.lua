@@ -10,7 +10,7 @@ return {
       "marksman",
       "jsonls",
       "pyright",
-      "sqls",
+      "sqlls",
       "tsserver",
       "yamlls",
     },
