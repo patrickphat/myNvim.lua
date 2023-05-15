@@ -26,11 +26,11 @@ return {
 
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
 
-    ["S-h"] = {
+    ["<S-h>"] = {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
-    ["S-l"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+    ["<S-l>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
       desc = "Next buffer" },
   },
   t = {
